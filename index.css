@@ -1,5 +1,6 @@
 .nav{
     margin-top: -3%;
+    margin-right: 3%;
 }
 .nav a{
     float: right;
@@ -9,18 +10,26 @@
    color: black;
 }
 div h3{
-    
+    margin-left: 5%;
+    background-color: red;
     margin-right: 50%;
+    
 }
 h3 span{
     color: light blue;
 }
-body{
+/* .hero-header {
     background-image: url('header.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size:80%  80% ;
+    background-size:90%  80% ;
     background-position: center;
-   
+   background-color: red;
     
+} */
+.hero-header {
+    background-color: red;
+    margin-top: 5%;
+  margin-right: 0%;
+
 }
