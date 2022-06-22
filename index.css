@@ -1,0 +1,16 @@
+.nav{
+    margin-top: -3%;
+}
+.nav a{
+    float: right;
+    padding-right: 80px;
+   
+    background-color: red;
+}
+div h3{
+    
+    margin-right: 50%;
+}
+h3 span{
+    color: light blue;
+}
