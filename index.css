@@ -5,7 +5,8 @@
     float: right;
     padding-right: 80px;
    
-    background-color: red;
+   text-decoration: none;
+   color: black;
 }
 div h3{
     
@@ -13,4 +14,13 @@ div h3{
 }
 h3 span{
     color: light blue;
+}
+body{
+    background-image: url('header.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:80%  80% ;
+    background-position: center;
+   
+    
 }
