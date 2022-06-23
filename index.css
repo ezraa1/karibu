@@ -59,14 +59,15 @@ h3 span{
     right: 28px;
     width: 280px;
   }
-.form-popup {
-    /* display: none; */
+  .form-popup {
+    display: none;
     position: fixed;
     bottom: 0;
     right: 15px;
     border: 3px solid #f1f1f1;
     z-index: 9;
   }
+  
   .form-container {
     max-width: 300px;
     padding: 10px;
