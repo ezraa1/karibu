@@ -60,7 +60,7 @@ h3 span{
     width: 280px;
   }
 .form-popup {
-    display: none;
+    /* display: none; */
     position: fixed;
     bottom: 0;
     right: 15px;
