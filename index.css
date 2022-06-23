@@ -28,8 +28,12 @@ h3 span{
     
 } */
 .hero-header {
-    background-color: red;
+   background: #eee;
     margin-top: 5%;
-  margin-right: 0%;
+  margin-right: 4%;
+  
 
+}
+#content{
+    height: 100%;
 }

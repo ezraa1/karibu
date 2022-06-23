@@ -8,19 +8,23 @@
     <script src="index.js"></script>
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
+  <body onload="getPageContent('getstarted')">
+    <div id="onload">
     <div class="title">
       <h3><span style="color: rgb(140, 140, 240)">KARIBU</span> THERAPIST</h3>
     </div>
 
     <div class="nav">
-      <a href="#">Services</a>
-      <a href="#">About</a>
-      <a href="#">Login</a>
-      <a href="#">Get started</a>
+      <a href="#" onclick="getPageContent('services')">Services</a>
+      <a href="#"  onclick="getPageContent('about')">About</a>
+      <a href="#"  onclick="getPageContent('login')">Login</a>
+      <a href="#"  onclick="getPageContent('getstarted')">Get started</a>
     </div>
+</div>
+
     <div class="hero-header">
-      <img src="/assets/header.jpg" width="100%" height="400px" alt="therapy" />
+      <img src="/assets/header.jpg" width="95%" height="400px" alt="therapy" />
     </div>
+    <div style="height: 100%;" id="content"></div>
   </body>
 </html>
