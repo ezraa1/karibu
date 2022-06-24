@@ -20,14 +20,18 @@
         <ul>
         <li><button onclick="displayMyContent()" id="servicesButton">Services</button> </li>
         <li> <a href="section2">About</a></li>
-        <li> <button class="open-button" onclick="openForm()">Login</button></li>
-        <li><a href="section4">Get started </a></li>
+        <li> <button class="open-button" onclick="openLoginForm()">Login</button></li>
+        <li><button class="open-button" onclick="openSignUpForm()">Get started</button></li>
     </ul>   
       </div>
     </div>
 
     <div class="hero-header">
+
       <img src="/assets/header.jpg" width="95%" height="400px" alt="therapy" />
+      <div class="par"> Affordable, private therapy<br>
+      Talk with a licensed, professional therapist anywhere
+    </div>
     </div>
     <div class="content">
         <section id="section1">
@@ -61,12 +65,10 @@
         
       </p>
     </section>
-    
-    <section id="section4">
-   
-    <div class="form-popup" id="myForm">
-        <form action="/action_page.php" class="form-container">
-          <h1>Login</h1>
+    <section id="section3">
+      <div class="form-popup1" id="myForm1">
+        <form action="/action_page.php" class="form-container1">
+          <h1>Sign up</h1>
       
           <label for="email"><b>Email</b></label>
           <input type="text" placeholder="Enter Email" name="email" required>
@@ -75,33 +77,32 @@
           <input type="password" placeholder="Enter Password" name="psw" required>
       
           <button type="submit" class="btn">Get started</button>
-          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          <button type="button" class="btn cancel" onclick="closeSignUpForm()">Close</button>
+        </form>
+      </div> 
+    </section>
+    
+    <section id="section4">
+      
+   
+    <div class="form-popup" id="myForm">
+      
+          <form class="form-container" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" >
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw">
+      
+          <input type="login" class="btn" value="Login">
+          <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
         </form>
       </div> 
     </section>  
 </div>
-    <!-- <form >
-        <div class="sign-up-htm">
-            <div class="group">
-                <label for="user" class="label">Username</label>
-                <input id="user" type="text" class="input">
-            </div>
-            <div class="group">
-                <label for="pass" class="label">Password</label>
-                <input id="pass" type="password" class="input" data-type="password">
-            </div>
-            <div class="group">
-                <label for="pass" class="label">Repeat Password</label>
-                <input id="pass" type="password" class="input" data-type="password">
-            </div>
-            <div class="group">
-                <label for="pass" class="label">Email Address</label>
-                <input id="pass" type="text" class="input">
-            </div>
-            <div class="group">
-                <input type="submit" class="button" value="Sign Up">
-            </div>
-        </form> -->
+  
         <script src="index.js"></script>
   </body>
 </html>
