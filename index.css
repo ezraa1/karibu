@@ -1,5 +1,6 @@
 body{
     background-color: rgb(204, 227, 235);
+    margin-left: 4%;
 }
 .nav{
     margin-top: -3%;
@@ -23,7 +24,7 @@ ul li {
     list-style: none;
 }
 div h3{
-    margin-left: 5%;
+    margin-left: 2%;
     
     margin-right: 50%;
     
@@ -36,11 +37,24 @@ h3 span{
    
     margin-top: 5%;
   margin-right: 4%;
-  
+  position: relative;
+  text-align: center;
+  color: white;
 
 }
+.par{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+ #section1{
+  text-align: center;
+}
 
-.open-button {
+
+/* .open-button {
     background-color: #555;
     color: white;
     padding: 16px 20px;
@@ -51,7 +65,7 @@ h3 span{
     bottom: 23px;
     right: 28px;
     width: 280px;
-  }
+  } */
   .form-popup {
     display: none;
     position: fixed;
