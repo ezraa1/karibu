@@ -21,6 +21,13 @@ function displayMyContent(){
         // servicesButton.innerHTML
     }
 }
+var img = document.createElement("img");
+img.src = "s-image3.jpg";
+
+var div = document.getElementById("section2");
+div.appendChild(img)
+div.setAttribute("style", "text-align:center");
+
 function openForm() {
     document.getElementById("myForm").style.display = "block";
   }
