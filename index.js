@@ -20,6 +20,7 @@ function displayMyContent(){
 }
 var img = document.createElement("img");
 img.src = "s-image3.jpg";
+img.style.height="250px";
 
 var div = document.getElementById("section2");
 div.appendChild(img)
@@ -34,15 +35,9 @@ function openLoginForm() {
   }
  document.getElementById("myForm").style.left = "450px";
 
-//  signup form
- function openSignUpForm() {
-    document.getElementById("myForm1").style.display = "block";
-  }
+
   
-  function closeSignUpForm() {
-    document.getElementById("myForm1").style.display = "none";
-  }
- document.getElementById("myForm1").style.left = "450px";
+ 
 
 //  validation
 function validateForm() {
