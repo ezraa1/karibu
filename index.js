@@ -26,18 +26,23 @@ var div = document.getElementById("section2");
 div.appendChild(img)
 div.setAttribute("style", "text-align:center");
 
-function openLoginForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
+// function openLoginForm() {
+//     document.getElementById("myForm").style.display = "block";
+//   }
   
-  function closeLoginForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
- document.getElementById("myForm").style.left = "450px";
+//   function closeLoginForm() {
+//     document.getElementById("myForm").style.display = "none";
+//   }
+//  document.getElementById("myForm").style.left = "450px";
 
-
-  
+ function openSignUpForm() {
+  document.getElementById("myForm1").style.display = "block";
+}
  
+ function closeSignUpForm() {
+  document.getElementById("myForm1").style.display = "none";
+ }
+
 
 //  validation
 function validateForm() {
