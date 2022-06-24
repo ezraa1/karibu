@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(204, 227, 235);
+}
 .nav{
     margin-top: -3%;
     margin-right: 3%;
@@ -9,6 +12,16 @@
    text-decoration: none;
    color: black;
 }
+ul li a:hover{
+    background: blue;
+}
+ li a{
+    text-decoration: none;
+    color:black ;
+}
+ul li {
+    list-style: none;
+}
 div h3{
     margin-left: 5%;
     
@@ -18,15 +31,7 @@ div h3{
 h3 span{
     color: light blue;
 }
-/* .hero-header {
-    background-image: url('header.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:90%  80% ;
-    background-position: center;
-   background-color: red;
-    
-} */
+
 .hero-header {
    
     margin-top: 5%;
@@ -34,19 +39,7 @@ h3 span{
   
 
 }
-/* #content{
-    height: 100%;
-} */
-/* form .sign-up-htm{
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	position:absolute;
-	transform:rotateY(180deg);
-	backface-visibility:hidden;
-	transition:all .4s linear;
-} */
+
 .open-button {
     background-color: #555;
     color: white;
@@ -105,4 +98,15 @@ h3 span{
   
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
+  }
+  /* section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  } */
+  #section1{
+    display: block;
   }

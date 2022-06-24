@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="index.js"></script>
+    
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
   </head>
-  <body onload="getPageContent('getstarted')">
+  <body>
     <div id="onload">
       <div class="title">
         <h3><span style="color: rgb(140, 140, 240)">KARIBU</span> THERAPIST</h3>
@@ -17,7 +18,7 @@
       <div class="nav">
 
         <ul>
-        <li><a href="section1">Services</a></li>
+        <li><button onclick="displayMyContent()" id="servicesButton">Services</button> </li>
         <li> <a href="section2">About</a></li>
         <li><a href="section3" >Login</a></li>
         <li><a href="section4">Get started </a></li>
@@ -51,7 +52,7 @@
         
       </p>
     </section>
-    </div>
+    
     <section id="section4">
     <button class="open-button" onclick="openForm()">Open Form</button>
     <div class="form-popup" id="myForm">
@@ -69,7 +70,7 @@
         </form>
       </div> 
     </section>  
-
+</div>
     <!-- <form >
         <div class="sign-up-htm">
             <div class="group">
@@ -92,5 +93,6 @@
                 <input type="submit" class="button" value="Sign Up">
             </div>
         </form> -->
+        
   </body>
 </html>
