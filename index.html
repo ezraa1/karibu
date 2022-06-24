@@ -15,18 +15,21 @@
       </div>
 
       <div class="nav">
-        <a href="#">Services</a>
-        <a href="#">About</a>
-        <a href="#">Login</a>
-        <a href="#">Get started </a>
-              
+
+        <ul>
+        <li><a href="section1">Services</a></li>
+        <li> <a href="section2">About</a></li>
+        <li><a href="section3" >Login</a></li>
+        <li><a href="section4">Get started </a></li>
+    </ul>   
       </div>
     </div>
 
     <div class="hero-header">
       <img src="/assets/header.jpg" width="95%" height="400px" alt="therapy" />
     </div>
-    <div>
+    <div class="content">
+        <section id="section1">
       <h3>BetterHelp Services</h3>
       <p>
         We work to represent a few of the many positive services that we have
@@ -36,8 +39,9 @@
         would like to review your therapist, please send your review to
         <a href="#">contact@betterhelp.com.</a>
       </p>
-    </div>
-    <div>
+    </section>
+   
+    <section id="section2">
         <p>
       <h4>Our Mission</h4>
       
@@ -46,7 +50,9 @@
         anywhere.
         
       </p>
+    </section>
     </div>
+    <section id="section4">
     <button class="open-button" onclick="openForm()">Open Form</button>
     <div class="form-popup" id="myForm">
         <form action="/action_page.php" class="form-container">
@@ -61,7 +67,8 @@
           <button type="submit" class="btn">Get started</button>
           <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
-      </div>   
+      </div> 
+    </section>  
 
     <!-- <form >
         <div class="sign-up-htm">

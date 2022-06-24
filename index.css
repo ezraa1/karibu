@@ -2,7 +2,7 @@
     margin-top: -3%;
     margin-right: 3%;
 }
-.nav a{
+.nav li{
     float: right;
     padding-right: 80px;
    
@@ -11,7 +11,7 @@
 }
 div h3{
     margin-left: 5%;
-    background-color: red;
+    
     margin-right: 50%;
     
 }
@@ -28,7 +28,7 @@ h3 span{
     
 } */
 .hero-header {
-   background: #eee;
+   
     margin-top: 5%;
   margin-right: 4%;
   
