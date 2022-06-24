@@ -69,10 +69,10 @@ h3 span{
   .form-popup {
     display: none;
     position: fixed;
-    bottom: 0;
+    bottom: 10%;
     
     border: 3px solid #f1f1f1;
-    z-index: 9;
+    z-index:9;
   }
   
   .form-container {

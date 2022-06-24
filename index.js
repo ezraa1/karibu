@@ -35,4 +35,23 @@ function openForm() {
   function closeForm() {
     document.getElementById("myForm").style.display = "none";
   }
- document.getElementById("myForm").style.left = "100px";
+ document.getElementById("myForm").style.left = "450px";
+
+//  signup form
+ function opForm() {
+    document.getElementById("myForm1").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm1").style.display = "none";
+  }
+ document.getElementById("myForm1").style.left = "450px";
+
+//  validation
+function validateForm() {
+    let x = document.forms["email"]["psw"].class;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }

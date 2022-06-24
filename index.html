@@ -21,7 +21,7 @@
         <li><button onclick="displayMyContent()" id="servicesButton">Services</button> </li>
         <li> <a href="section2">About</a></li>
         <li> <button class="open-button" onclick="openForm()">Login</button></li>
-        <li><a href="section4">Get started </a></li>
+        <li><button class="open-button" onclick="opForm()">Get started</button></li>
     </ul>   
       </div>
     </div>
@@ -65,8 +65,25 @@
         
       </p>
     </section>
+    <section id="section3">
+      <div class="form-popup1" id="myForm1">
+        <form action="/action_page.php" class="form-container1">
+          <h1>Sign up</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn">Get started</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div> 
+    </section>
     
     <section id="section4">
+      
    
     <div class="form-popup" id="myForm">
         <form action="/action_page.php" class="form-container">
@@ -78,7 +95,7 @@
           <label for="psw"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="psw" required>
       
-          <button type="submit" class="btn">Get started</button>
+          <button type="submit" class="btn">Login</button>
           <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
       </div> 
