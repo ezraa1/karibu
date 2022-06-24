@@ -1,6 +1,3 @@
-
-
-
 const getPage = async () => {
     fetch("https://api.m3o.com/v1/user/Create")
     
@@ -28,30 +25,31 @@ var div = document.getElementById("section2");
 div.appendChild(img)
 div.setAttribute("style", "text-align:center");
 
-function openForm() {
+function openLoginForm() {
     document.getElementById("myForm").style.display = "block";
   }
   
-  function closeForm() {
+  function closeLoginForm() {
     document.getElementById("myForm").style.display = "none";
   }
  document.getElementById("myForm").style.left = "450px";
 
 //  signup form
- function opForm() {
+ function openSignUpForm() {
     document.getElementById("myForm1").style.display = "block";
   }
   
-  function closeForm() {
+  function closeSignUpForm() {
     document.getElementById("myForm1").style.display = "none";
   }
  document.getElementById("myForm1").style.left = "450px";
 
 //  validation
 function validateForm() {
-    let x = document.forms["email"]["psw"].class;
+    
+    let x = document.forms["myForm"]["email"].value;
     if (x == "") {
-      alert("Name must be filled out");
+      alert("Please input email");
       return false;
     }
   }
