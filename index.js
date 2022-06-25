@@ -1,10 +1,19 @@
-const getPage = async () => {
-    fetch("https://api.m3o.com/v1/user/Create")
-    
-    
-      .then(response => response.json())
-       .then(data => console.log(data));
-}
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'c76087e6c5msh932d04687515a1ap1787c3jsn098606630817',
+		'X-RapidAPI-Host': 'real-time-google-search.p.rapidapi.com'
+	}
+};
+
+fetch('https://real-time-google-search.p.rapidapi.com/search?q=bitcoin&location_name=London%2COntario%2CCanada&location_parameters_auto=true', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
+//        .catch(error => {
+//         console.error(error);
+//        })
+// }
 function displayMyContent(){
     var myContent= document.getElementById("section1");
     var defaultDisplay = myContent.style.display;
@@ -53,3 +62,4 @@ function validateForm() {
       return false;
     }
   }
+
