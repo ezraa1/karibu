@@ -49,7 +49,7 @@ var div = document.getElementById("section2");
 div.appendChild(img)
 div.setAttribute("style", "text-align:center");
 
-
+document.getElementById("myForm1").style.display="none";
  function openSignUpForm() {
   document.getElementById("myForm1").style.display = "block";
 }
