@@ -1,10 +1,33 @@
-const getPage = async () => {
-    fetch("https://api.m3o.com/v1/user/Create")
+
+document.addEventListener("DOMContentLoaded", () => {
+})
+  function myFunction() {
+    var x = document.getElementById("county");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+  
+  fetch(' https://ezraa1.github.io/my-server/db.json')
     
+    .then(response => response.json())
+  .then(data => {
+  
+   data.forEach(element => {
+    let list=document.querySelector("#list")
+    let li=document.createElement("li")
+    li.innerText=element.name
+    list.appendChild(li).style.listStyle="none"
+ 
+ 
     
-      .then(response => response.json())
-       .then(data => console.log(data));
+
+  })
+  })
 }
+
 function displayMyContent(){
     var myContent= document.getElementById("section1");
     var defaultDisplay = myContent.style.display;
@@ -20,36 +43,29 @@ function displayMyContent(){
 }
 var img = document.createElement("img");
 img.src = "s-image3.jpg";
+img.style.height="250px";
 
 var div = document.getElementById("section2");
 div.appendChild(img)
 div.setAttribute("style", "text-align:center");
 
-function openLoginForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeLoginForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
- document.getElementById("myForm").style.left = "450px";
 
-//  signup form
  function openSignUpForm() {
-    document.getElementById("myForm1").style.display = "block";
-  }
-  
-  function closeSignUpForm() {
-    document.getElementById("myForm1").style.display = "none";
-  }
- document.getElementById("myForm1").style.left = "450px";
+  document.getElementById("myForm1").style.display = "block";
+}
+ 
+ function closeSignUpForm() {
+  document.getElementById("myForm1").style.display = "none";
+ }
+
 
 //  validation
 function validateForm() {
     
     let x = document.forms["myForm"]["email"].value;
     if (x == "") {
-      alert("Please input email");
+      alert("Input is incorrect!");
       return false;
     }
   }
+

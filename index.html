@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="index.css" />
    
@@ -17,18 +18,51 @@
 
       <div class="nav">
 
-        <ul>
+        <ul >
+    
         <li><button onclick="displayMyContent()" id="servicesButton">Services</button> </li>
-        <li> <a href="section2">About</a></li>
-        <li> <button class="open-button" onclick="openLoginForm()">Login</button></li>
-        <li><button class="open-button" onclick="openSignUpForm()">Get started</button></li>
-    </ul>   
+        <li> <button class="About-button" >About</button></li>
+        <!-- <li> <button class="open-button" onclick="openLoginForm()">Login</button></li> -->
+               <li><button class="open-button" onclick="openSignUpForm()">Get started</button></li>
+    <!-- <li> 
+      <input type="text" placeholder="Search town here..">
+      <button type="search"><i class="fa fa-search"></i></button>
+    </li> -->
+  </ul>
+         
+      
+    <div id="list"> 
+      <button class ="lst" onclick="myFunction()">Choose your location</button>
+     </div>
+      <div id="county"></div>
+      <div class="desc"></div>
+    
+                 
       </div>
     </div>
-
+    
+    <section id="section3">
+      <div class="form-popup1" id="myForm1">
+        <form  class="form-container" onsubmit="return validateForm()" method="post">
+          <h1>Sign up</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" >
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" >
+          <label for="psw"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" >
+      
+          <button type="submit" class="btn">Get started</button>
+          <button type="button" class="btn cancel" onclick="closeSignUpForm()">Close</button>
+        </form>
+      </div> 
+    </section>
+    
     <div class="hero-header">
 
-      <img src="/assets/header.jpg" width="95%" height="400px" alt="therapy" />
+      <img src="header.jpg" width="95%" height="400px" alt="therapy" />
       <div class="par"> Affordable, private therapy<br>
       Talk with a licensed, professional therapist anywhere
     </div>
@@ -47,10 +81,10 @@
       <div class="row">
         
         <div class="column">
-          <img src="/assets/s-image1.jpg" alt="Anger" style="width:100%">
+          <img src="s-image1.jpg" alt="Anger" style="width:100%">
         </div>
         <div class="column">
-          <img src="/assets/s-image2.jpg" alt="Anxiety" style="width:100%">
+          <img src="s-image2.jpg" alt="Anxiety" style="width:100%">
         </div>
       </div> 
     </section>
@@ -65,29 +99,13 @@
         
       </p>
     </section>
-    <section id="section3">
-      <div class="form-popup1" id="myForm1">
-        <form action="/action_page.php" class="form-container1">
-          <h1>Sign up</h1>
-      
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-      
-          <button type="submit" class="btn">Get started</button>
-          <button type="button" class="btn cancel" onclick="closeSignUpForm()">Close</button>
-        </form>
-      </div> 
-    </section>
     
     <section id="section4">
       
    
     <div class="form-popup" id="myForm">
       
-          <form class="form-container" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+          <form class="form-container" name="myForm"  onsubmit="return validateForm()" method="post">
           <h1>Login</h1>
       
           <label for="email"><b>Email</b></label>
@@ -96,11 +114,14 @@
           <label for="psw"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="psw">
       
-          <input type="login" class="btn" value="Login">
+          <button type="submit" class="btn">Login</button>
           <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
         </form>
       </div> 
     </section>  
+</div>
+<div id="location">
+  <h3>Counties</h3>
 </div>
   
         <script src="index.js"></script>
