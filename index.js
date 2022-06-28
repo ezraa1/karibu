@@ -1,15 +1,44 @@
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'c76087e6c5msh932d04687515a1ap1787c3jsn098606630817',
-		'X-RapidAPI-Host': 'real-time-google-search.p.rapidapi.com'
-	}
-};
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-User-Agent': 'desktop',
+// 		'X-Proxy-Location': 'kenya',
+// 		'X-RapidAPI-Key': 'c76087e6c5msh932d04687515a1ap1787c3jsn098606630817',
+// 		'X-RapidAPI-Host': 'google-search3.p.rapidapi.com'
+// 	}
+// };
 
-fetch('https://real-time-google-search.p.rapidapi.com/search?q=bitcoin&location_name=London%2COntario%2CCanada&location_parameters_auto=true', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+// const init = () => {
+//  var inputForm = addEventListener('search', (event) => {
+//       event.preventDefault();
+      // const input = document.querySelector('input#searchByID');
+
+      fetch('./db.json')
+      .then (function(resp) {
+return resp.json();
+      })
+          .then(function(data){
+            console.log(data)
+          })
+            // console.log(data);
+            // const location = document.querySelector('#location');
+  // const summary = document.querySelector('section#movieDetails p');
+  // location.innerText = data.location;
+  // summary.innerText = data.summary;
+//   });
+// });
+// }
+// document.addEventListener('DOMContentLoaded', init);
+
+
+
+// fetch('http://localhost:3000', options)
+// 	.then(response => response.json())
+// 	.then(response => console.log(response))
+// 	.catch(err => console.error(err));
+
+
+
 //        .catch(error => {
 //         console.error(error);
 //        })
