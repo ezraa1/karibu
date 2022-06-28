@@ -1,8 +1,7 @@
 # karibu
 ## By Ezra Kipchirchir
 ### Description
-This is a single page application that enables the user to interact with the server through authentication when signing up and loging in. It also allows the user to navigate to the to the content on the same page.
-
+This is a single page application that enables the user to interact with the server by fetching local counties for user to search for available therapist. It also allows the user to navigate to the to the content on the same page.
 ### Table of content
 
 - Project-setup-Instructions and requirements
