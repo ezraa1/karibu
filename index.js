@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let li=document.createElement("li")
     li.innerText=element.name
     list.appendChild(li).style.listStyle="none"
+   
  
  
     
