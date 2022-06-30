@@ -21,17 +21,15 @@
         <ul >
     
         <li><button onclick="displayMyContent()" id="servicesButton">Services</button> </li>
-        <li> <button class="About-button" >About</button></li>
+        <li> <button id="About-button" >About</button></li>
         <!-- <li> <button class="open-button" onclick="openLoginForm()">Login</button></li> -->
                <li><button class="open-button" onclick="openSignUpForm()">Get started</button></li>
-    <!-- <li> 
-      <input type="text" placeholder="Search town here..">
-      <button type="search"><i class="fa fa-search"></i></button>
-    </li> -->
+   
   </ul>
          
       
     <div id="list"> 
+      
       <button class ="lst" onclick="myFunction()">Choose your location</button>
      </div>
       <div id="county"></div>
@@ -100,30 +98,13 @@
       </p>
     </section>
     
-    <section id="section4">
-      
-   
-    <div class="form-popup" id="myForm">
-      
-          <form class="form-container" name="myForm"  onsubmit="return validateForm()" method="post">
-          <h1>Login</h1>
-      
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" >
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw">
-      
-          <button type="submit" class="btn">Login</button>
-          <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
-        </form>
-      </div> 
-    </section>  
+  
 </div>
 <div id="location">
   
   
 </div>
+
   
         <script src="index.js"></script>
   </body>

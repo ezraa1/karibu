@@ -1,5 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
+  
 })
   function myFunction() {
     var x = document.getElementById("county");
@@ -20,15 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let li=document.createElement("li")
     li.innerText=element.name
     list.appendChild(li).style.listStyle="none"
-   
- 
- 
-    
-
-  })
+   })
   })
 }
-
 function displayMyContent(){
     var myContent= document.getElementById("section1");
     var defaultDisplay = myContent.style.display;
@@ -70,3 +65,8 @@ function validateForm() {
     }
   }
 
+  document.getElementById("About-button").addEventListener("click", showAbout);
+
+function showAbout() {
+  alert ("We're here to save lives!");
+}
